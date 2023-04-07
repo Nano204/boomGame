@@ -57,7 +57,8 @@ function resetGame() {
 }
 
 function startTimer() {
-    const time = randomInterval(3000, 15000);
+    const time = randomInterval(5000, 30000);
+    console.log(time);
     ticTocSound.play();
     boomTimeOut = setTimeout(() => {
         changeLabel("Boom!!!");
